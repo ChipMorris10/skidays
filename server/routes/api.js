@@ -37,7 +37,7 @@ router.get('/skidays', function(req, res, next) {
     .done();
 });
 
-// PUT ONE - not working in terminal or Postman
+// PUT ONE
 router.put('/skiday/:id', function(req, res, next) {
   Skiday.findByIdAndUpdateQ(req.params.id, req.body)
     .then(function(result){res.json(result)})
