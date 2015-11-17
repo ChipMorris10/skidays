@@ -13,24 +13,13 @@ router.post('/skidays', function(req, res, next) {
     numRuns: req.body.numRuns,
     lastChair: req.body.lastChair,
     rating: req.body.rating,
-    notes: req.body.notes
+    notes: req.body.notes,
   })
   .saveQ()
     .then(function(result){res.json(result)})
     .catch(function(err){res.send(err)})
     .done()
 });
-
-
-
-
-
-
-
-
-
-
-
 
 
 

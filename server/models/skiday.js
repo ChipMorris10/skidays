@@ -1,8 +1,8 @@
 var mongoose = require('mongoose-q')(require('mongoose'),{spread:true});
 var mongose = require('mongoose');
-var Schema = mongoose. Schema;
+var Schema = mongoose.Schema;
 
-var Skiday = new Schama({
+var Skiday = new Schema({
   date: Date,
   temperature: Number,
   newSnow: Number,
@@ -18,4 +18,4 @@ var Skiday = new Schama({
 
 
 mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/skidays');
-module.exports = mongoose.model('skiday'. Skiday);
+module.exports = mongoose.model('skiday', Skiday);
