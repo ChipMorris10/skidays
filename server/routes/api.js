@@ -18,23 +18,39 @@ router.post('/skidays', function(req, res, next) {
   .saveQ()
     .then(function(result){res.json(result)})
     .catch(function(err){res.send(err)})
-    .done()
+    .done();
 });
 
-// GET ONE
-// router.get('/skiday:id', function(req, res, next) {
-//   Skiday.findByIdQ(req.params.id)
-//     .then(function(result){res.json(resutl)})
-//     .catch(function(err){res.send(err)})
-//     .done()
-// });
+// GET ONE - returns an empty array in terminal and Postman
+router.get('/skiday/:id', function(req, res, next) {
+  Skiday.findByIdQ(req.params.id)
+    .then(function(result){res.json(resutl)})
+    .catch(function(err){res.send(err)})
+    .done();
+});
 
 // GET ALL
 router.get('/skidays', function(req, res, next) {
   Skiday.findQ()
     .then(function(result){res.json(result)})
     .catch(function(err){res.send(err)})
-    .done()
+    .done();
+});
+
+// PUT ONE - not working in terminal or Postman
+router.put('/skiday/:id', function(req, res, next) {
+  Skiday.findByIdAndUpdateQ(req.params.id, req.body)
+    .then(function(result){res.json(result)})
+    .catch(function(err){res.send(err)})
+    .done();
+});
+
+// DELETE ONE
+router.delete('/skiday/:id', function(req, res, next) {
+  Skiday.findByIdAndRemoveQ(req.params.id)
+    .then(function(result){res.json(result)})
+    .catch(function(err){res.send(err)})
+    .done();
 });
 
 
