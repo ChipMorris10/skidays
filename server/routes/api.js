@@ -24,7 +24,7 @@ router.post('/skidays', function(req, res, next) {
 // GET ONE - returns an empty array in terminal and Postman
 router.get('/skiday/:id', function(req, res, next) {
   Skiday.findByIdQ(req.params.id)
-    .then(function(result){res.json(resutl)})
+    .then(function(result){res.json(result)})
     .catch(function(err){res.send(err)})
     .done();
 });
@@ -52,12 +52,6 @@ router.delete('/skiday/:id', function(req, res, next) {
     .catch(function(err){res.send(err)})
     .done();
 });
-
-
-
-
-
-
 
 
 
