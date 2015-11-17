@@ -21,6 +21,22 @@ router.post('/skidays', function(req, res, next) {
     .done()
 });
 
+// GET ONE
+// router.get('/skiday:id', function(req, res, next) {
+//   Skiday.findByIdQ(req.params.id)
+//     .then(function(result){res.json(resutl)})
+//     .catch(function(err){res.send(err)})
+//     .done()
+// });
+
+// GET ALL
+router.get('/skidays', function(req, res, next) {
+  Skiday.findQ()
+    .then(function(result){res.json(result)})
+    .catch(function(err){res.send(err)})
+    .done()
+});
+
 
 
 
