@@ -21,7 +21,7 @@ router.post('/skidays', function(req, res, next) {
     .done();
 });
 
-// GET ONE - returns an empty array in terminal and Postman
+// GET ONE
 router.get('/skiday/:id', function(req, res, next) {
   Skiday.findByIdQ(req.params.id)
     .then(function(result){res.json(result)})
