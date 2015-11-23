@@ -1,0 +1,147 @@
+/* Website: (Title Goes Here Once I Have One)
+  Author: Chip Morris
+  Author Site: Link to my portfolio
+  Version: 1.0.0
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Global */
+h1 {
+
+}
+
+p {
+
+}
+
+a {
+
+}
+
+.clear { /* Clears float */
+  clear: both;
+}
+
+
+/* Header */
+header {
+  border: solid thin red;
+  width: 100%;
+  height: 550px;
+  background-image: url("../images/terrain-trees.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+aside {
+  border: solid thin orange;
+  width: 30%;
+  float: right;
+}
+
+aside.weather {
+  border: solid thin yellow;
+  height: 50px;
+}
+
+nav {
+  border: solid thin green;
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: -150px;
+}
+
+nav a {
+  border: solid thin brown;
+  width: 23%;
+  height: 250px;
+  border-radius: 10px;
+  display: inline-block;
+
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+background: white; /* Old browsers */
+background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+}
+
+/* Content */
+div.wrapper {
+  border: solid thin blue;
+  width: 100;
+}
+
+section {
+  border: solid thin gray;
+  width: 65%;
+  float: left;
+}
+
+article {
+  border: solid thin hotpink;
+  width: 45%;
+  float: left;
+}
+
+aside.sidebar {
+  border: solid thin purple;
+  height: 200px;
+}
+
+footer {
+  border: solid thin aqua;
+  width: 100%;
+}
+
+
