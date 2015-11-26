@@ -91,6 +91,7 @@ aside {
 aside.weather {
   border: solid thin yellow;
   height: 50px;
+  color: white;
 }
 
 nav {
@@ -99,6 +100,14 @@ nav {
     height: 250px;
     margin: 0 auto;
     margin-top: -150px;
+    transition: width 2s;
+    transition-delay: .05s;
+
+}
+
+nav:hover {
+  width: 1400px;
+
 }
 
 nav a {
@@ -117,6 +126,8 @@ background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffff
 }
 
 /* Content */
+
+
 div.wrapper {
   border: solid thin blue;
   width: 100;
