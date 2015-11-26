@@ -1,4 +1,4 @@
-app.factory("skiFactory", ['$http', function($http) {
+app.factory('skiFactory', ['$http', function($http) {
   var object{};
 
 // get all request
@@ -27,7 +27,7 @@ object.putSkiday = function(id, payload) {
   return $http.put('api/skiday/'+id, payload);
 };
 
-
+return object;
 
 
 }]);

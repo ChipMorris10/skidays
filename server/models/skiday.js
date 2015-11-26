@@ -11,7 +11,7 @@ var Skiday = new Schema({
   firstChair: String,
   numRuns: Number,
   lastChair: String,
-  // skiedWith: Relation,         // Talk with Wes about this
+  skiedWith: String,
   rating: Number,
   notes: String,
 });
