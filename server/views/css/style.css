@@ -100,14 +100,6 @@ nav {
     height: 250px;
     margin: 0 auto;
     margin-top: -150px;
-    transition: width 2s;
-    transition-delay: .05s;
-
-}
-
-nav:hover {
-  width: 1400px;
-
 }
 
 nav a {
@@ -117,13 +109,31 @@ nav a {
   border-radius: 10px;
   display: inline-block;
 
-
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
-background: white; /* Old browsers */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+background: #ffffff; /* Old browsers */
 background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 
+  /*transition: width .5s;*/
 }
+
+@keyframes jiggle {
+  0% {left: 0px;}
+  50% {left: 200px;}
+}
+
+nav a:hover {
+  width: 23%;
+  /*-webkit-animation: jiggle 0.2s infinite;*/
+ /* -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: jiggle;
+  -webkit-animation-iteration-count: infinite;*/
+
+  animation: jiggle 12s infinite;
+
+}
+
+
 
 /* Content */
 
