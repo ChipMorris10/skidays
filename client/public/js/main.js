@@ -8,6 +8,12 @@ myApp.config(['$routeProvider', function ($routeProvider) {
     .when('/newtrax', {
       templateUrl: '../../partials/newtrax.html'
     })
+    .when('/photos', {
+      templateURL: '../../partials/photos.html'
+    })
+    .when('/search', {
+      templateURL: '../../partials/search.html'
+    })
     .otherwise({redirectTo: '/'});
 }]);
 
