@@ -9,10 +9,10 @@ myApp.config(['$routeProvider', function ($routeProvider) {
       templateUrl: '../../partials/newtrax.html'
     })
     .when('/photos', {
-      templateURL: '../../partials/photos.html'
+      templateUrl: '../../partials.photos.html'
     })
     .when('/search', {
-      templateURL: '../../partials/search.html'
+      templateUrl: '../../partials.search.html'
     })
     .otherwise({redirectTo: '/'});
 }]);
