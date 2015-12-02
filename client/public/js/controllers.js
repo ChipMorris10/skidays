@@ -3,8 +3,12 @@
 // I believe I need to define skiController in index.html, but I'm not sure
 // $scope binds values and variables to the view
 
-app.controller('skiController', ['$scope', 'skiFactory', function($scope, skiFactory) {
 
-
-
-}])
+myApp.controller('skiController', ['$scope', 'skiFactory',
+  function($scope, skiFactory) {
+    $scope.daysArray;
+    skiFactory.getSkidays().then(function(days){
+      $scope.daysArray = days.data;
+      console.log($scope.daysArray);
+    })
+}]);

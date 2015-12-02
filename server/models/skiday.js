@@ -1,5 +1,5 @@
 var mongoose = require('mongoose-q')(require('mongoose'),{spread:true});
-var mongose = require('mongoose');
+// var mongose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var Skiday = new Schema({

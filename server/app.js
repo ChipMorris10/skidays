@@ -12,7 +12,7 @@ var bodyParser = require('body-parser');
 
 // *** routes *** //
 var routes = require('./routes/index.js');
-// var skidays = require('./routes/api.js');
+var skidays = require('./routes/api.js');               // turn on to look at the CRUD api
 
 
 // *** express instance *** //
@@ -22,11 +22,11 @@ var app = express();
 // *** view engine *** //
 // var swig = new swig.Swig();
 // app.engine('html', swig.renderFile);
-// app.set('view engine', 'html');
+app.set('view engine', 'html');                         // turn on to look at the CRUD api
 
 
 // *** static directory *** //
-// app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));        // turn on to look at the CRUD api
 
 
 // *** config middleware *** //
@@ -39,7 +39,7 @@ app.use(express.static(path.join(__dirname, '../client')));
 
 // *** main routes *** //
 app.use('/', routes);
-// app.use('/api/', skidays);
+app.use('/api/', skidays);                              // turn on to look at the CRUD api
 
 
 // catch 404 and forward to error handler
