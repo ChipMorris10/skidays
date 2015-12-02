@@ -3,7 +3,7 @@ var mongoose = require('mongoose-q')(require('mongoose'),{spread:true});
 var Schema = mongoose.Schema;
 
 var Skiday = new Schema({
-  date: Date,
+  date: String,
   temperature: Number,
   newSnow: Number,
   conditions: String,
