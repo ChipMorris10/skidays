@@ -1,21 +1,37 @@
-#footerBar {
-  margin: 30px;
+/******************************/
+/*          Global            */
+/******************************/
+
+h3 {
+  font-weight: bold;
+  font-variant: small-caps;
 }
 
 .clear {
   clear: both;
 }
 
-/* Header */
+.container {
+  border: solid thin blue;
+}
+
+/******************************/
+/*          Header            */
+/******************************/
 
 header {
-  border: solid thin red;
+  /*border: solid thin red;*/
   width: 100%;
   height: 550px;
-  background-image: url("../img/Yellowstone.jpg");
+  background-image: url("../img/terrain-trees.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/******************************/
+/*         Main Page          */
+/******************************/
 
 nav {
   position: relative;
@@ -28,7 +44,7 @@ nav {
 }
 
 nav a {
-  border: solid thin brown;
+  border: solid thin black;
 
   display:inline-block;
   background-color: lightgray;
@@ -55,25 +71,13 @@ nav img {
 }
 
 nav p {
-  border: solid thin yellow;
+  /*border: solid thin yellow;*/
   height: 75px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 8px;
 }
-
-/*.skipass_image {
-  display: inline-block;
-  width: 150px;
-  height: 75px;
-  margin: 10px;
-  border: 3px solid grey;
-  border-radius: 5px 5px 5px 5px;
-}*/
-
-/*.tags {
-  margin-top: 1px;
-  border-style: solid;
-  border-width: 1px;
-  width: 300px;
-}*/
 
 .jumbotron {
   margin: 0px;
@@ -81,20 +85,34 @@ nav p {
   height: 100px;
 }
 
+
+/******************************/
+/*          Footer            */
+/******************************/
+
 #footerBar {
-  height: 40px;
+  height: 52px;
   background-color: black;
   position: static;
   bottom: 0;
   width: 100%;
   text-align: center;
+  margin: 0px;
+  background-image: url("../img/images.jpg");
+  background-repeat: repeat;
+  background-size: initial;
 }
 
 #footerBar a {
   margin: 0 55px;
+  color: white;
+  font-weight: bold;
   /*border: solid thin yellow;*/
 }
 
-.container {
-  border: solid thin blue;
-}
+/*width: 100%;
+  height: 550px;
+  background-image: url("../img/imgres-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+*/
