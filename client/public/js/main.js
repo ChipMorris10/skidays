@@ -6,7 +6,8 @@ myApp.config(['$routeProvider', function ($routeProvider) {
       templateUrl: '../../partials/main_page.html'
     })
     .when('/newtrax', {
-      templateUrl: '../../partials/newtrax.html'
+      templateUrl: '../../partials/newtrax.html',
+      controller: 'newTraxController'
     })
     .when('/photos', {
       templateUrl: '../../partials/photos.html'

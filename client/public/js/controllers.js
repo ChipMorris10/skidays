@@ -12,3 +12,16 @@ myApp.controller('skiController', ['$scope', 'skiFactory',
       console.log($scope.daysArray);
     })
 }]);
+
+myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
+  function($scope, skiFactory, $location) {
+    $scope.createNewTrax = function(newTrax){
+      skiFactory.postSkiday(newTrax).then(function(){
+        $scope.newTrax = {};
+      }).then(function(){
+        $location.path("/");
+      })
+    }
+}]);
+
+

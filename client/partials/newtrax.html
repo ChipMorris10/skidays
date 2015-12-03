@@ -1,68 +1,70 @@
-<form>
+<form ng-submit="createNewTrax(newTrax)">
 <h1>New Trax</h1>
 <h4>Enter the information for the day</h4>
 <div class="container">
   <div class="row">
     <div class="form-group pull-left col-sm-6">
-        <label for="inputEmail3" class="col-sm-6 control-label">Date</label>
+        <label  class="col-sm-6 control-label">Date</label>
         <div class="col-sm-6">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          <input type="string" ng-model="newTrax.date" class="form-control" id="skiDate" placeholder="Date (xx/xx/xx)">
         </div>
 
-        <label for="inputEmail3" class="col-sm-6 control-label">Conditions</label>
+
+        <label class="col-sm-6 control-label">Conditions</label>
         <div class="col-sm-6">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          <input type="text" ng-model="newTrax.conditions" class="form-control" id="skiConditions" placeholder="(Hard, Icy, Powder, etc.)">
         </div>
       </div>
 
     <div class="form-group pull-right col-sm-6">
-      <label for="inputEmail3" class="col-sm-6 control-label">Temperature</label>
+      <label class="col-sm-6 control-label">Temperature</label>
       <div class="col-sm-6">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        <input type="text" ng-model="newTrax.temperature" class="form-control" id="skiTemperature" placeholder="Temperature">
       </div>
-      <label for="inputEmail3" class="col-sm-6 control-label">Mountain</label>
+      <label class="col-sm-6 control-label">Mountain</label>
       <div class="col-sm-6">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        <input type="text" ng-model="newTrax.mountain" class="form-control" id="skiMountain" placeholder="Mountain">
       </div>
     </div>
-
   </div>
 
   <hr>
 
   <div class="row">
     <div class="form-group pull-left col-sm-6">
-        <label for="inputEmail3" class="col-sm-6 control-label">First Chair</label>
+        <label class="col-sm-6 control-label">First Chair</label>
         <div class="col-sm-6">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          <input type="string" ng-model="newTrax.firstChair" class="form-control" id="skiFirstChair" placeholder="Time of first chair up">
         </div>
 
-        <label for="inputEmail3" class="col-sm-6 control-label">Last Chair</label>
+        <label class="col-sm-6 control-label">Last Chair</label>
         <div class="col-sm-6">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          <input type="string" ng-model="newTrax.lastChair" class="form-control" id="skiLastChair" placeholder="Time of last chair up">
         </div>
 
-        <label for="inputEmail3" class="col-sm-6 control-label">Number of Runs</label>
+        <label class="col-sm-6 control-label">Number of Runs</label>
         <div class="col-sm-6">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          <input type="number" ng-model="newTrax.numRuns" class="form-control" id="skiNumRuns" placeholder="Total runs skied">
         </div>
       </div>
 
     <div class="form-group pull-right col-sm-6">
-      <label for="inputEmail3" class="col-sm-6 control-label">Skied With</label>
+      <label class="col-sm-6 control-label">Skied With</label>
       <div class="col-sm-6">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        <input type="text" ng-model="newTrax.skiedWith" class="form-control" id="skiSkiedWith" placeholder="(Chip, Alane, etc.)">
       </div>
-      <label for="inputEmail3" class="col-sm-6 control-label">Rating</label>
+      <label class="col-sm-6 control-label">Rating</label>
       <div class="col-sm-6">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        <input type="number" ng-model="newTrax.rating" class="form-control" id="skiRating" placeholder="1-5">
       </div>
-      <label for="inputEmail3" class="col-sm-6 control-label">Notes</label>
+      <label class="col-sm-6 control-label">Notes</label>
       <div class="col-sm-6">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        <input type="text" ng-model="newTrax.notes" class="form-control" id="skiNotes" placeholder="Notes">
       </div>
     </div>
+    <input type="submit" class="btn btn-success">
   </div>
 </div>
+
 </form>
 
