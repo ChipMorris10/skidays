@@ -92,6 +92,87 @@ nav p {
 
 
 /******************************/
+/*          New Trax          */
+/******************************/
+
+.test {
+  font-size: 22px;
+}
+
+
+/******************************/
+/*           Photos           */
+/******************************/
+
+body {
+  background: #B3BABF;
+}
+
+section {
+  padding: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.crop {
+  border: 15px solid white;
+  display: inline-block;
+  height: 250px;
+  overflow: hidden;
+  width: 300px;
+
+  position: absolute;
+}
+
+a:first-child div {
+  transform: rotate(-15deg);
+  z-index: 1;
+}
+
+a:nth-child(2) div {
+  transform: rotate(15deg);
+  z-index: 2;
+}
+
+a:last-child div {
+  z-index: 3;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+/******************************/
+/*          Search            */
+/******************************/
+
+.searchInfo {
+  text-align: center;
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}​
+
+.glyphicon-search {
+  width: 600px;
+  top: 32px;
+}
+
+
+/******************************/
 /*          Footer            */
 /******************************/
 
