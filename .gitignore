@@ -3,3 +3,5 @@ node_modules/
 npm-debug.log
 .env
 notes.md
+test_index.html
+style.css
