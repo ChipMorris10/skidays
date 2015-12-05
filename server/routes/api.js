@@ -8,10 +8,12 @@ router.post('/skidays', function(req, res, next) {
     date: req.body.date,
     temperature: req.body.temperature,
     newSnow: req.body.newSnow,
+    conditions: req.body.conditions,
     mountain: req.body.mountain,
-    firstChair: req.body.firstChair,
     numRuns: req.body.numRuns,
+    firstChair: req.body.firstChair,
     lastChair: req.body.lastChair,
+    skiedWith: req.body.skiedWith,
     rating: req.body.rating,
     notes: req.body.notes,
   })

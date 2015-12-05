@@ -1,6 +1,6 @@
 <form ng-submit="createNewTrax(newTrax)">
-<h1 class="traxPage">New Trax</h1>
-<h4 class="traxPage">Enter the information for the day</h4>
+<h1>New Trax</h1>
+<h4>Enter the information for the day</h4>
 <div class="container newTrax">
   <div class="row">
     <div class="form-group pull-left col-sm-6">
@@ -11,18 +11,18 @@
 
         <label class="col-sm-6 control-label">Conditions</label>
         <div class="col-sm-6">
-          <input type="text" ng-model="newTrax.conditions" class="form-control" id="skiConditions" placeholder="(Hard, Icy, Powder, etc.)">
+          <input type="text" ng-model="newTrax.conditions" class="form-control" id="skiConditions" placeholder="(Hard, Icy, Powder, etc.)" required>
         </div>
       </div>
 
     <div class="form-group pull-right col-sm-6">
       <label class="col-sm-6 control-label">Temperature</label>
       <div class="col-sm-6">
-        <input type="number" ng-model="newTrax.temperature" class="form-control" id="skiTemperature" placeholder="Temperature">
+        <input type="number" ng-model="newTrax.temperature" class="form-control" id="skiTemperature" placeholder="Temperature" required>
       </div>
       <label class="col-sm-6 control-label">Mountain</label>
       <div class="col-sm-6">
-        <input type="text" ng-model="newTrax.mountain" class="form-control" id="skiMountain" placeholder="Mountain">
+        <input type="text" ng-model="newTrax.mountain" class="form-control" id="skiMountain" placeholder="Mountain" required>
       </div>
     </div>
   </div>
@@ -33,44 +33,43 @@
     <div class="form-group pull-left col-sm-6">
         <label class="col-sm-6 control-label">First Chair</label>
         <div class="col-sm-6">
-          <input type="string" ng-model="newTrax.firstChair" class="form-control" id="skiFirstChair" placeholder="Time of first chair up">
+          <input type="string" ng-model="newTrax.firstChair" class="form-control" id="skiFirstChair" placeholder="Time of first chair up" required>
         </div>
 
         <label class="col-sm-6 control-label">Last Chair</label>
         <div class="col-sm-6">
-          <input type="string" ng-model="newTrax.lastChair" class="form-control" id="skiLastChair" placeholder="Time of last chair up">
+          <input type="string" ng-model="newTrax.lastChair" class="form-control" id="skiLastChair" placeholder="Time of last chair up" required>
         </div>
 
         <label class="col-sm-6 control-label">New Snow on Mountain</label>
         <div class="col-sm-6">
-          <input type="number" ng-model="newTrax.newSnow" class="form-control" id="skiNewSnow" placeholder="New Snow on Mountain">
+          <input type="number" ng-model="newTrax.newSnow" class="form-control" id="skiNewSnow" placeholder="New Snow on Mountain" required>
         </div>
 
          <label class="col-sm-6 control-label">Notes</label>
         <div class="col-sm-6">
-          <input type="text" ng-model="newTrax.notes" class="form-control" id="skiNotes" placeholder="Notes">
+          <input type="text" ng-model="newTrax.notes" class="form-control" id="skiNotes" placeholder="Notes" required>
         </div>
       </div>
 
     <div class="form-group pull-right col-sm-6">
       <label class="col-sm-6 control-label">Skied With</label>
       <div class="col-sm-6">
-        <input type="text" ng-model="newTrax.skiedWith" class="form-control" id="skiSkiedWith" placeholder="(Chip, Alane, etc.)">
+        <input type="text" ng-model="newTrax.skiedWith" class="form-control" id="skiSkiedWith" placeholder="(Chip, Alane, etc.)" required>
       </div>
 
       <label class="col-sm-6 control-label">Rating</label>
       <div class="col-sm-6">
-        <input type="number" ng-model="newTrax.rating" class="form-control" id="skiRating" placeholder="1-5">
+        <input type="number" ng-model="newTrax.rating" class="form-control" id="skiRating" placeholder="1-5" required>
       </div>
 
       <label class="col-sm-6 control-label">Number of Runs</label>
       <div class="col-sm-6">
-        <input type="number" ng-model="newTrax.numRuns" class="form-control" id="skiNumRuns" placeholder="Number of Runs">
+        <input type="number" ng-model="newTrax.numRuns" class="form-control" id="skiNumRuns" placeholder="Number of Runs" required>
       </div>
     </div>
 
     <input type="submit" class="btn btn-success newTraxBtn">
-
 
   </div>
 </div>

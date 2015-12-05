@@ -12,12 +12,6 @@ h3 {
   clear: both;
 }
 
-.container_article {
-  border: solid thin green;
-  margin-top: 100px;
-  margin: 30px;
-  padding: 30px;
-}
 
 /******************************/
 /*          Header            */
@@ -37,12 +31,17 @@ header {
 /*         Main Page          */
 /******************************/
 
-.blog {
+section.container.blog {
+  border: solid thin green;
   background-color: lightblue;
 }
+
+.row {}
+
 nav {
   position: relative;
   top: -150px;
+  margin-bottom: -100px;
 
  /* Flexbox effecting nested elements */
   display: flex;
@@ -58,7 +57,7 @@ nav a {
   width: 260px;
   height: 350px;
   border-radius: 12px;
-  box-shadow: 0 5px 10px gray;
+  box-shadow: 0 9px 7px gray;
 
   margin: 0 25px 25px;
   text-align: center;
@@ -97,8 +96,8 @@ nav p {
 /*          New Trax          */
 /******************************/
 
-.test {
-  font-size: 22px;
+.control-label {
+  font-size: 14px;
 }
 
 .newTraxBtn {
@@ -107,7 +106,8 @@ nav p {
   right: 165px;
 }
 
-.traxPage {
+form[ng-submit="createNewTrax(newTrax)"] h1,
+form[ng-submit="createNewTrax(newTrax)"] h4 {
   text-align: center;
 }
 
@@ -174,6 +174,7 @@ img {
 }
 
 input{
+    text-align: center;
     display: block;
     margin: 0 auto;
     width: 160px;
@@ -191,9 +192,11 @@ input{
   padding: 20px;
 }
 
-.glyphicon {
-  left: 445px;
+.glyphicon-search::before {
+  border: solid thin green;
+  position: relative;
   top: 33px;
+  left: 445px;
 }
 
 
