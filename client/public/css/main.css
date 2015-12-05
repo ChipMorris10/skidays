@@ -37,7 +37,9 @@ header {
 /*         Main Page          */
 /******************************/
 
-
+.blog {
+  background-color: lightblue;
+}
 nav {
   position: relative;
   top: -150px;
@@ -99,14 +101,27 @@ nav p {
   font-size: 22px;
 }
 
+.newTraxBtn {
+  position: fixed;
+  bottom: 120px;
+  right: 165px;
+}
+
+.traxPage {
+  text-align: center;
+}
+
+.newTrax {
+  margin-top: 30px;
+}
 
 /******************************/
 /*           Photos           */
 /******************************/
 
-body {
+/*body {
   background: #B3BABF;
-}
+}*/
 
 section {
   padding: 100px;
@@ -154,6 +169,10 @@ img {
   text-align: center;
 }
 
+.rowSearch glyphicon {
+
+}
+
 input{
     display: block;
     margin: 0 auto;
@@ -169,6 +188,12 @@ input{
 .glyphicon-search {
   width: 600px;
   top: 32px;
+  padding: 20px;
+}
+
+.glyphicon {
+  left: 445px;
+  top: 33px;
 }
 
 
@@ -177,9 +202,9 @@ input{
 /******************************/
 
 #footerBar {
-  height: 52px;
+  height: 50px;
   background-color: black;
-  position: static;
+  position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
