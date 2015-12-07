@@ -2,9 +2,12 @@
 /*          Global            */
 /******************************/
 
+/* body spacing above margin */
 body {
   padding-bottom: 100px;
 }
+
+/* bottom wording - Ski Pass*/
 h3 {
   font-weight: bold;
   font-variant: small-caps;
@@ -20,43 +23,65 @@ h3 {
 /*          Header            */
 /******************************/
 
+
+/* background photo */
 header {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* background photo - Main Page */
 header.mainPage {
   /*border: solid thin red;*/
   height: 550px;
-  background-image: url("../img/terrain-trees.jpg");
+  background-image: url("../img/coppermtn2.jpg");
   padding: 25px;
+  background-position: 0 -100px;
 }
 
-header.logPage {
+/* background photo - New Trax Page */
+header.newTraxPage {
+  height: 350px;
+  background-image: url("../img/newtrax.jpg");
+  background-position: 0 -100px;
+}
+
+/* background photo - Photos Page */
+header.photoGallery {
+  height: 350px;
+  background-image: url("../img/newtrax.jpg");
+  background-position: 0 -100px;
+}
+
+/* background photo - Search Page */
+header.searchPage {
   height: 350px;
   background-image: url("../img/cold-snow-winter-mountain.jpeg");
   background-position: 0 -100px;
 }
 
-header.photoPage {
-  height: 350px;
-  background-image: url("../img/cold-snow-winter-mountain.jpeg");
-  background-position: 0 -100px;
-}
-
+/* weather widget area - Main Page */
 header aside.mainPage {
   border: solid thin yellow;
   float: right;
 }
 
+/* logo - Main Page */
 header.mainPage img {
   width: 180px;
   display: inline-block;
 }
 
+/* title - Main Page */
 header.mainPage h1 {
   display: inline-block;
+}
+
+/* search box - Log Page */
+header aside.logPage {
+  float: right;
+  color: white;
 }
 
 
@@ -65,6 +90,15 @@ header.mainPage h1 {
 /******************************/
 
 
+/* h1 - Main Page */
+header.mainPage h1 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-variant: small-caps;
+}
+
+/* ski passes - Main Page */
 nav {
   position: relative;
   top: -150px;
@@ -76,6 +110,7 @@ nav {
   justify-content: space-around;
 }
 
+/* ski passes - Main Page */
 nav a {
   border: solid thin black;
 
@@ -93,16 +128,19 @@ nav a {
   transform: rotate(15deg);
 }
 
+/* ski passes - Main Page */
 nav a:hover {
   color: inherit;
   text-decoration: none;
   transform: rotate(0deg);
 }
 
+/* blog image - Main Page*/
 nav img {
   width: 100px;
 }
 
+/* blog paragraph - Main Page */
 nav p {
   /*border: solid thin yellow;*/
   height: 75px;
@@ -112,25 +150,23 @@ nav p {
   margin-top: 8px;
 }
 
-.jumbotron {
-  margin: 0px;
-  padding: 0px;
-  height: 100px;
-}
-
+/* blog post - Main Page */
 section.container.blog {
   border: solid thin green;
   background-color: lightblue;
 }
 
+/* blog post - Main Page */
 section.container.blog .row {
   padding: 25px;
 }
 
+/* blog post - Main Page */
 section.container.blog .row article {
   padding: 25px;
 }
 
+/* blog post - Main Page */
 section.container.blog img {
   height: 325px;
 }
@@ -140,24 +176,30 @@ section.container.blog img {
 /*          New Trax          */
 /******************************/
 
+
+/* schema titles - New Trax Page*/
 .control-label {
   font-size: 14px;
 }
 
+/* submit button - New Trax Page*/
 .newTraxBtn {
   position: fixed;
   bottom: 120px;
   right: 165px;
 }
 
-form[ng-submit="createNewTrax(newTrax)"] h1,
-form[ng-submit="createNewTrax(newTrax)"] h4 {
+/* h1 & h4 - New Trax Page */
+form[ng-submit="createNewTrax(newTrax) newTraxPage"] h1,
+form[ng-submit="createNewTrax(newTrax) newTraxPage"] h4 {
   text-align: center;
 }
 
+/* schema data margin - New Trax Page */
 .newTrax {
-  margin-top: 30px;
+  margin-top: 60px;
 }
+
 
 /******************************/
 /*           Photos           */
@@ -166,6 +208,7 @@ form[ng-submit="createNewTrax(newTrax)"] h4 {
 /*body {
   background: #B3BABF;
 }*/
+
 
 section.photoGallery a {
   text-decoration: none;
@@ -200,49 +243,79 @@ img {
 }
 
 
-
 /******************************/
-/*          Search            */
+/*    Search Page (Log Page)  */
 /******************************/
 
-.searchInfo {
+
+/* search box - Search Page */
+input {
   text-align: center;
-}
-
-.rowSearch glyphicon {
-
-}
-
-input{
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: 160px;
-    outline: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom-style: solid;
-    border-bottom-width: thin;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  /*outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-style: solid;
+  border-bottom-width: thin;*/
 }​
 
-.glyphicon-search {
-  width: 600px;
-  top: 32px;
-  padding: 20px;
-}
 
-.glyphicon-search::before {
-  border: solid thin green;
+/* search glyphicon - Search Page */
+/*.glyphicon-search::before {
+  border: solid thick white;
   position: relative;
-  top: 33px;
+  top: 50px;
   left: 445px;
+}*/
+
+
+.searchInfo {
+  color: white;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-variant: small-caps;
 }
 
+/* logo - Search Page */
+header.searchPage img {
+  width: 180px;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+
+/* title - Search Page */
+header.searchPage h1 {
+  display: inline-block;
+}
+
+/* search bar - Search Page */
+header aside.searchPage {
+  float: right;
+}
+
+/* search glyphicon - Search Page */
+.glyphicon {
+  top: 45px;
+  padding: 20px;
+  color: white;
+  font-size: 17px;
+}
+
+header.searchPage h1 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-variant: small-caps;
+}
 
 /******************************/
 /*          Footer            */
 /******************************/
+
 
 #footerBar {
   height: 50px;
@@ -268,5 +341,5 @@ input{
   height: 550px;
   background-image: url("../img/imgres-1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-*/
+  background-size: cover;*/
+
