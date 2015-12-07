@@ -2,16 +2,9 @@
 /*          Global            */
 /******************************/
 
-/* body spacing above margin */
+/* gives each page a margin above footer */
 body {
   padding-bottom: 100px;
-}
-
-/* bottom wording - Ski Pass*/
-h3 {
-  font-weight: bold;
-  font-variant: small-caps;
-  text-align: center;
 }
 
 .clear {
@@ -24,6 +17,7 @@ h3 {
 /******************************/
 
 
+/* NOT SURE THIS IS STILL IN USE */
 /* background photo */
 header {
   width: 100%;
@@ -42,16 +36,18 @@ header.mainPage {
 
 /* background photo - New Trax Page */
 header.newTraxPage {
-  height: 350px;
+  height: 450px;
   background-image: url("../img/coppermtn.jpg");
-  background-position: 0 -100px;
+  padding: 25px;
+  background-position: 0 -450px;
 }
 
 /* background photo - Photos Page */
-header.photoGallery {
-  height: 350px;
-  background-image: url("../img/newtrax.jpg");
-  background-position: 0 -100px;
+header.photosPage {
+  height: 450px;
+  background-image: url("../img/skiing_photo.jpg");
+  padding: 25px;
+  background-position: 0 -500px;
 }
 
 /* background photo - Search Page */
@@ -59,6 +55,7 @@ header.searchPage {
   height: 350px;
   background-image: url("../img/cold-snow-winter-mountain.jpeg");
   background-position: 0 -100px;
+  padding: 25px;
 }
 
 /* weather widget area - Main Page */
@@ -100,6 +97,13 @@ header.mainPage h1 {
   font-weight: bold;
   letter-spacing: 5px;
   font-variant: small-caps;
+}
+
+/* bottom wording - Ski Pass*/
+h3 {
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
 }
 
 /* ski passes - Main Page */
@@ -204,6 +208,11 @@ form[ng-submit="createNewTrax(newTrax) newTraxPage"] h4 {
   margin-top: 60px;
 }
 
+/* title - newTrax Page */
+header.newTraxPage h1 {
+  display: inline-block;
+}
+
 
 /******************************/
 /*           Photos           */
@@ -214,7 +223,7 @@ form[ng-submit="createNewTrax(newTrax) newTraxPage"] h4 {
 }*/
 
 
-section.photoGallery a {
+section.photosPage a {
   text-decoration: none;
 }
 
@@ -225,26 +234,50 @@ div.crop {
   overflow: hidden;
   width: 300px;
 
-  position: absolute;
+  /*position: absolute;*/
 }
 
 a:first-child div {
-  transform: rotate(-15deg);
-  z-index: 1;
+  /*transform: rotate(-15deg);
+  z-index: 1;*/
 }
 
 a:nth-child(2) div {
-  transform: rotate(15deg);
-  z-index: 2;
+  /*transform: rotate(15deg);
+  z-index: 2;*/
 }
 
 a:last-child div {
-  z-index: 3;
+  /*z-index: 3;*/
 }
 
 img {
   width: 100%;
 }
+
+/* logo - Main Page */
+header.photosPage img {
+  width: 180px;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+/* title - Photos Page */
+header.photosPage h1 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-variant: small-caps;
+}
+
+
+
+
+/* title - Search Page */
+/*header.searchPage h1 {
+  display: inline-block;
+}*/
+
 
 
 /******************************/
