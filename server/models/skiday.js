@@ -18,5 +18,5 @@ var Skiday = new Schema({
 
 
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/skidays');
+// mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/skidays');
 module.exports = mongoose.model('skiday', Skiday);
