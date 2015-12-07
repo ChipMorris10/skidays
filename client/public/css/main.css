@@ -43,7 +43,7 @@ header.mainPage {
 /* background photo - New Trax Page */
 header.newTraxPage {
   height: 350px;
-  background-image: url("../img/newtrax.jpg");
+  background-image: url("../img/coppermtn.jpg");
   background-position: 0 -100px;
 }
 
@@ -63,8 +63,12 @@ header.searchPage {
 
 /* weather widget area - Main Page */
 header aside.mainPage {
-  border: solid thin yellow;
+  border: solid thin black;
   float: right;
+  color: white;
+  font-weight: thick;
+  text-align: center;
+  padding: 10px;
 }
 
 /* logo - Main Page */
@@ -115,7 +119,7 @@ nav a {
   border: solid thin black;
 
   display:inline-block;
-  background-color: lightgray;
+  background-color: #87b1bf;
   width: 260px;
   height: 350px;
   border-radius: 12px;
