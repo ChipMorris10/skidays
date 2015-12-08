@@ -3,13 +3,15 @@
   <img src="../public/img/ski-black-hi.png" />
   <h1>Log</h1>
   <aside class="col-lg-3 right">
+    <p>Current Temperature at Copper: 30°</p>
+    <p>Current Temperature at Steamboat: 37°</p>
   </aside>
 </header>
 <div class="clear"></div>
 
 <div class="container">
   <div class="row breadcrumbs">
-    <a href="main_page.html">Home</a>
+    <a href="https://frozen-wave-9600.herokuapp.com/#/">Home</a>
     <p>» Log</p>
     <div class="rowSearch">
       <span class="glyphicon glyphicon-search"></span>
@@ -17,14 +19,12 @@
     </div>
   </div> <!-- end .breadcrumbs -->
   <div class="clear"></div>
-</div> <!-- end .container -->
 
 <section class="logTable">
     <!-- repeating over data to fill out form -->
     <div class="row" ng-repeat='day in daysArray | filter:query'>
         <div style='background-color: yellow;'>
         <div class="form-group pull-left col-sm-6">
-
             <div class="row">
               <h5 class="col-sm-6 control-label" >Date</h5>
               <div class="col-sm-6">
@@ -66,8 +66,7 @@
                 <h5>{{day.notes}}</h5>
               </div>
             </div>
-
-        </div>
+        </div> <!-- end form-group pull-left col-sm-6 -->
 
         <div class="form-group pull-left col-sm-6">
             <div class="row">
@@ -107,8 +106,10 @@
         </div>
         <hr>
         </div>
+    </div> <!-- end "row" ng-repeat='day in daysArray -->
   </section>
       </div>
-  </div>
+
+
 
 

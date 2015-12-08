@@ -25,3 +25,4 @@ myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
 }]);
 
 
+

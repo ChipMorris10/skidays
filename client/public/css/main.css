@@ -191,8 +191,8 @@ header.newTraxPage {
 /* submit button - New Trax Page*/
 .newTraxBtn {
   position: fixed;
-  bottom: 120px;
-  right: 165px;
+  bottom: 125px;
+  right: 175px;
 }
 
 /* h1 & h4 - New Trax Page */
@@ -287,7 +287,7 @@ header.photosPage h1 {
 header.searchPage {
   height: 375px;
   background-image: url("../img/cold-snow-winter-mountain.jpeg");
-  background-position: 0 -100px;
+  background-position: 0 -140px;
   padding: 25px;
 }
 
@@ -357,7 +357,6 @@ header.searchPage h1 {
   letter-spacing: 5px;
   font-variant: small-caps;
 }
-
 
 
 /******************************/
