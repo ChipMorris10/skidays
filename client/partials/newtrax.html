@@ -1,18 +1,22 @@
-<header class='col-lg-12 mainPage newTraxPage'>
+<!-- header controlls for logo and page title -->
+<header class='col-lg-12 newTraxPage'>
 <form ng-submit="createNewTrax(newTrax)">
   <img src="../public/img/ski-black-hi.png" />
   <h1>New Trax</h1>
-  <aside class="col-lg-3 mainPage">
+  <aside class="col-lg-3 right">
     <p>Weather Widget</p>
   </aside>
 </header>
+<div class="clear"></div>
 
-<!-- <form ng-submit="createNewTrax(newTrax) newTraxPage"> -->
-<!-- <h1>New Trax</h1>
-<h4>Enter the information for the day</h4> -->
-<div class="container newTrax">
-  <div class="row">
+<div class="container">
+  <div class="row breadcrumbs">
+    <a href="main_page.html">Home</a>
+    <p>» New Trax</p>
+  </div>
+    <div class="row">
 
+  <!-- collect input data -->
     <div class="form-group pull-left col-sm-6">
         <label class="col-sm-6 control-label">Date</label>
         <div class="col-sm-6 test">
@@ -87,6 +91,3 @@
 
 </form>
 
-<FORM>
-<INPUT Type="BUTTON" Value="Home Page" Onclick="window.location.href='http://localhost:3000/#/'">
-</FORM>

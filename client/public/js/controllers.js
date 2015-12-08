@@ -1,6 +1,6 @@
 // myApp.controller refers to app.js file and var app = angular.module('myApp', [])
 // $scope binds values and variables to the view
-// skiFactory is also in the services.js file. It's a variable name and could be anything
+// Variable skiFactory is also in the services.js file
 
 
 myApp.controller('skiController', ['$scope', 'skiFactory',

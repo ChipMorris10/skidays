@@ -1,3 +1,6 @@
+// services are single-instance objects that perform tasks needed to support functionality
+// $http communicates with the server
+
 myApp.factory('skiFactory', ['$http', function($http) {
   var object={};
 

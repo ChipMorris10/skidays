@@ -7,15 +7,65 @@ body {
   padding-bottom: 100px;
 }
 
+/* overriding Bootstrap and floating widget right */
+.right {
+  float: right;
+}
+
+/* turns off the floats */
 .clear {
   clear: both;
 }
+
+.returnHome {
+  margin-left: 30px;
+  /*position: fixed;*/
+  bottom: 120px;
+  height: 40px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+/* top, right/left bottom */
+.breadcrumbs {
+  margin: 25px 0px 50px;
+}
+
+.breadcrumbs p {
+  display: inline;
+}
+
 
 
 /******************************/
 /*          Header            */
 /******************************/
 
+/* logo - All pages */
+header img {
+  width: 180px;
+  display: inline-block;
+}
+
+/* h1 - Main Page */
+header h1 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-variant: small-caps;
+  display: inline-block;
+}
+
+/* weather widget area - Main Page */
+header aside {
+  border: solid thin black;
+  float: right;
+  color: white;
+  font-weight: thick;
+  text-align: center;
+  padding: 10px;
+}
 
 /* NOT SURE THIS IS STILL IN USE */
 /* background photo */
@@ -24,6 +74,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/******************************/
+/*         Main Page          */
+/******************************/
 
 /* background photo - Main Page */
 header.mainPage {
@@ -34,70 +89,6 @@ header.mainPage {
   background-position: 0 -100px;
 }
 
-/* background photo - New Trax Page */
-header.newTraxPage {
-  height: 450px;
-  background-image: url("../img/coppermtn.jpg");
-  padding: 25px;
-  background-position: 0 -450px;
-}
-
-/* background photo - Photos Page */
-header.photosPage {
-  height: 450px;
-  background-image: url("../img/skiing_photo.jpg");
-  padding: 25px;
-  background-position: 0 -500px;
-}
-
-/* background photo - Search Page */
-header.searchPage {
-  height: 350px;
-  background-image: url("../img/cold-snow-winter-mountain.jpeg");
-  background-position: 0 -100px;
-  padding: 25px;
-}
-
-/* weather widget area - Main Page */
-header aside.mainPage {
-  border: solid thin black;
-  float: right;
-  color: white;
-  font-weight: thick;
-  text-align: center;
-  padding: 10px;
-}
-
-/* logo - Main Page */
-header.mainPage img {
-  width: 180px;
-  display: inline-block;
-}
-
-/* title - Main Page */
-header.mainPage h1 {
-  display: inline-block;
-}
-
-/* search box - Log Page */
-header aside.logPage {
-  float: right;
-  color: white;
-}
-
-
-/******************************/
-/*         Main Page          */
-/******************************/
-
-
-/* h1 - Main Page */
-header.mainPage h1 {
-  color: white;
-  font-weight: bold;
-  letter-spacing: 5px;
-  font-variant: small-caps;
-}
 
 /* bottom wording - Ski Pass*/
 h3 {
@@ -184,6 +175,13 @@ section.container.blog img {
 /*          New Trax          */
 /******************************/
 
+/* background photo - New Trax Page */
+header.newTraxPage {
+  height: 375px;
+  background-image: url("../img/coppermtn.jpg");
+  padding: 25px;
+  background-position: 0 -450px;
+}
 
 /* schema titles - New Trax Page*/
 .control-label {
@@ -218,21 +216,25 @@ header.newTraxPage h1 {
 /*           Photos           */
 /******************************/
 
+/* background photo - Photos Page */
+header.photosPage {
+  height: 375px;
+  background-image: url("../img/skiing_photo.jpg");
+  padding: 25px;
+  background-position: 0 -500px;
+}
+
 /*body {
   background: #B3BABF;
 }*/
 
-
 section.photosPage a {
   text-decoration: none;
-}
-
-div.crop {
   border: 15px solid white;
   display: inline-block;
   height: 250px;
   overflow: hidden;
-  width: 300px;
+  width: 24%;
 
   /*position: absolute;*/
 }
@@ -270,9 +272,6 @@ header.photosPage h1 {
   font-variant: small-caps;
 }
 
-
-
-
 /* title - Search Page */
 /*header.searchPage h1 {
   display: inline-block;
@@ -284,11 +283,16 @@ header.photosPage h1 {
 /*    Search Page (Log Page)  */
 /******************************/
 
+/* background photo - Search Page */
+header.searchPage {
+  height: 375px;
+  background-image: url("../img/cold-snow-winter-mountain.jpeg");
+  background-position: 0 -100px;
+  padding: 25px;
+}
 
 /* search box - Search Page */
 input {
-  text-align: center;
-  display: block;
   margin: 0 auto;
   width: 150px;
   /*outline: none;
@@ -299,6 +303,10 @@ input {
   border-bottom-width: thin;*/
 }​
 
+/* search box - Search Page */
+header aside.searchPage {
+  float: right;
+}
 
 /* search glyphicon - Search Page */
 /*.glyphicon-search::before {
@@ -307,7 +315,6 @@ input {
   top: 50px;
   left: 445px;
 }*/
-
 
 .searchInfo {
   color: white;
@@ -329,6 +336,11 @@ header.searchPage h1 {
   display: inline-block;
 }
 
+.rowSearch {
+  display: inline-block;
+  float: right;
+}
+
 /* search bar - Search Page */
 header aside.searchPage {
   float: right;
@@ -336,9 +348,6 @@ header aside.searchPage {
 
 /* search glyphicon - Search Page */
 .glyphicon {
-  top: 45px;
-  padding: 20px;
-  color: white;
   font-size: 17px;
 }
 
@@ -348,6 +357,8 @@ header.searchPage h1 {
   letter-spacing: 5px;
   font-variant: small-caps;
 }
+
+
 
 /******************************/
 /*          Footer            */
