@@ -19,7 +19,7 @@ var app = express();
 
 // *** view engine *** //
 // var swig = new swig.Swig();
-// app.engine('html', swig.renderFile);
+app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');                         // turn on to look at the CRUD api
 
 

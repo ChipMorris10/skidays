@@ -15,8 +15,27 @@ myApp.controller('skiController', ['$scope', 'skiFactory',
 
 myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
   function($scope, skiFactory, $location) {
-    $scope.createNewTrax = function(newTrax){
-      skiFactory.postSkiday(newTrax).then(function(){
+    console.log('inside of newTraxController');
+    // START
+    // I put this in for Hiring Day purposes
+    $scope.newTrax={
+      date:"12/9/2015",
+      temperature:32,
+      newSnow:5,
+      conditions:"Powder",
+      mountain:"Copper",
+      numRuns:28,
+      firstChair:"9:00",
+      lastChair:"4:30",
+      ranking:4,
+      skiedWith:"Alane",
+      notes:"Great release prior to Hiring Day"
+    }
+    // END
+
+    $scope.createNewTrax = function(){
+
+      skiFactory.postSkiday($scope.newTrax).then(function(){
         $scope.newTrax = {};
       }).then(function(){
         $location.path("/");

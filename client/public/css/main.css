@@ -10,6 +10,7 @@ body {
 /* overriding Bootstrap and floating widget right */
 .right {
   float: right;
+  background-color: rgba(127,123,125,0.6)
 }
 
 /* turns off the floats */
@@ -27,11 +28,12 @@ body {
   border: none;
 }
 
-/* top, right/left bottom */
+/* margin = top, right/left bottom */
 .breadcrumbs {
   margin: 25px 0px 50px;
 }
 
+/* keeps information on one line */
 .breadcrumbs p {
   display: inline;
 }
@@ -90,7 +92,7 @@ header.mainPage {
 }
 
 
-/* bottom wording - Ski Pass*/
+/* wording at bottom of ski passes - Ski Pass*/
 h3 {
   font-weight: bold;
   font-variant: small-caps;
@@ -190,9 +192,18 @@ header.newTraxPage {
 
 /* submit button - New Trax Page*/
 .newTraxBtn {
-  position: fixed;
-  bottom: 125px;
-  right: 175px;
+  /*position: fixed;
+  bottom: 10%;
+  right: 10%;*/
+  margin-top: 2em;
+  margin-right: 1em;
+  width: 8em;
+
+}
+
+/* aligns submit button - New Trax Page */
+.alignRight {
+  text-align: right;
 }
 
 /* h1 & h4 - New Trax Page */
@@ -224,10 +235,6 @@ header.photosPage {
   background-position: 0 -500px;
 }
 
-/*body {
-  background: #B3BABF;
-}*/
-
 section.photosPage a {
   text-decoration: none;
   border: 15px solid white;
@@ -239,25 +246,29 @@ section.photosPage a {
   /*position: absolute;*/
 }
 
+/* keep for future use; aligned photos on top of each other and offset */
 a:first-child div {
   /*transform: rotate(-15deg);
   z-index: 1;*/
 }
 
+/* keep for future use; aligned photos on top of each other and offset */
 a:nth-child(2) div {
   /*transform: rotate(15deg);
   z-index: 2;*/
 }
 
+/* keep for future use; aligned photos on top of each other and offset */
 a:last-child div {
   /*z-index: 3;*/
 }
 
+/* controls the size of the pictures - Photos Page*/
 img {
   width: 100%;
 }
 
-/* logo - Main Page */
+/* logo - Photos Page */
 header.photosPage img {
   width: 180px;
   display: inline-block;
@@ -271,13 +282,6 @@ header.photosPage h1 {
   letter-spacing: 5px;
   font-variant: small-caps;
 }
-
-/* title - Search Page */
-/*header.searchPage h1 {
-  display: inline-block;
-}*/
-
-
 
 /******************************/
 /*    Search Page (Log Page)  */
@@ -295,6 +299,14 @@ header.searchPage {
 input {
   margin: 0 auto;
   width: 150px;
+  text-align: center;
+  background-color: ghostwhite;
+  color: black;
+  font-variant: small-caps;
+  font-size: large;
+
+
+
   /*outline: none;
   border-top: none;
   border-left: none;
@@ -308,21 +320,6 @@ header aside.searchPage {
   float: right;
 }
 
-/* search glyphicon - Search Page */
-/*.glyphicon-search::before {
-  border: solid thick white;
-  position: relative;
-  top: 50px;
-  left: 445px;
-}*/
-
-.searchInfo {
-  color: white;
-  letter-spacing: 5px;
-  font-weight: bold;
-  font-variant: small-caps;
-}
-
 /* logo - Search Page */
 header.searchPage img {
   width: 180px;
@@ -330,12 +327,12 @@ header.searchPage img {
   margin-top: 25px;
 }
 
-
 /* title - Search Page */
 header.searchPage h1 {
   display: inline-block;
 }
 
+/* floats the search box to the right - Search Page */
 .rowSearch {
   display: inline-block;
   float: right;
@@ -348,7 +345,8 @@ header aside.searchPage {
 
 /* search glyphicon - Search Page */
 .glyphicon {
-  font-size: 17px;
+  font-size: 1.2em;
+  padding: 5px;
 }
 
 header.searchPage h1 {

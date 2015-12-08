@@ -1,6 +1,6 @@
 <!-- header controlls for logo and page title -->
 <header class='col-lg-12 newTraxPage'>
-<form ng-submit="createNewTrax(newTrax)">
+<form>
   <img src="../public/img/ski-black-hi.png" />
   <h1>New Trax</h1>
   <aside class="col-lg-3 right">
@@ -12,7 +12,7 @@
 
 <div class="container">
   <div class="row breadcrumbs">
-    <a href="main_page.html">Home</a>
+    <a href="/#/">Home</a>
     <p>» New Trax</p>
   </div>
     <div class="row">
@@ -83,9 +83,11 @@
       <div class="col-sm-6">
         <input type="number" ng-model="newTrax.numRuns" class="form-control" id="skiNumRuns" placeholder="Number of Runs" required>
       </div>
+      <div class="alignRight">
+        <button class="newTraxBtn btn btn-success" ng-click="createNewTrax()">Submit</button>
+      </div>
     </div>
 
-    <input type="submit" class="btn btn-success newTraxBtn">
 
   </div>
 </div>
