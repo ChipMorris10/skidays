@@ -19,17 +19,17 @@ myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
     // START
     // I put this in for Hiring Day purposes
     $scope.newTrax={
-      date:"11/23/2015",
-      temperature:29,
-      newSnow:0,
-      conditions:"Hard",
-      mountain:"Copper",
-      numRuns:12,
+      date:"12/8/2015",
+      temperature:39,
+      newSnow:3,
+      conditions:"Soft new snow",
+      mountain:"Whistler",
+      numRuns:20,
       firstChair:"9:00",
-      lastChair:"2:30",
-      ranking:2,
+      lastChair:"3:30",
+      rating:3,
       skiedWith:"Kelly",
-      notes:"Icy and windy"
+      notes:"Sunny day"
     }
     // END
 
