@@ -19,7 +19,7 @@ myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
     // START
     // I put this in for Hiring Day purposes
     $scope.newTrax={
-      date:"12/9/2015",
+      date:"12/7/2015",
       temperature:32,
       newSnow:5,
       conditions:"Powder",
@@ -29,7 +29,7 @@ myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
       lastChair:"4:30",
       ranking:4,
       skiedWith:"Alane",
-      notes:"Great release prior to Hiring Day"
+      notes:"Sunny"
     }
     // END
 
@@ -38,7 +38,7 @@ myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
       skiFactory.postSkiday($scope.newTrax).then(function(){
         $scope.newTrax = {};
       }).then(function(){
-        $location.path("/");
+        $location.path("/search");
       })
     }
 }]);
