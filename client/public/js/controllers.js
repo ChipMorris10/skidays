@@ -6,6 +6,8 @@
 myApp.controller('skiController', ['$scope', 'skiFactory',
   function($scope, skiFactory) {
     $scope.daysArray;
+    $scope.sortType = "date";
+    $scope.sortReverse = false;
     // .then promise calls back success or error, asynchronously
     skiFactory.getSkidays().then(function(days){
       $scope.daysArray = days.data;
@@ -32,9 +34,7 @@ myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
       notes:"Sunny day"
     }
     // END
-
     $scope.createNewTrax = function(){
-
       skiFactory.postSkiday($scope.newTrax).then(function(){
         $scope.newTrax = {};
       }).then(function(){

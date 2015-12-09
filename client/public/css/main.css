@@ -357,6 +357,23 @@ header.searchPage h1 {
   font-variant: small-caps;
 }
 
+.titleRow {
+  /*font-weight: bold;*/
+  font-size: 1.4em;
+
+}
+
+#tableBody {
+  font-size: 1.3em;
+}
+
+.tablePage {
+  width: 90vw;
+}
+
+thead a:hover {
+  color: #83ABAD;
+}
 
 /******************************/
 /*          Footer            */
