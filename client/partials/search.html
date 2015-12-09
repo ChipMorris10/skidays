@@ -23,12 +23,14 @@
 <section class="logTable">
     <!-- repeating over data to fill out form -->
     <!-- ORIGINAL -->
-    <!-- <div class="row" ng-repeat='day in daysArray | filter : query : reverse'> -->
+    <div class="row" ng-repeat="day in daysArray | filter : query | orderBy:'-date'">
     <!-- ORIGINAL -->
 
 
     <!-- <div class="row" ng-repeat="day in daysArray | filter : query : orderBy:'-date'"> -->
-        <div class="row" ng-repeat="day in daysArray | orderBy:'-date'">
+
+    <!-- THIS SORTS BY DATE -->
+        <!-- <div class="row" ng-repeat="day in daysArray | orderBy:'-date'"> -->
 
         <div style='background-color: yellow;'>
         <div class="form-group pull-left col-sm-6">
