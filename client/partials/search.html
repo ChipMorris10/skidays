@@ -26,38 +26,48 @@
               <tr>
               <td class="tableHeader">#</td>
                <td class="tableHeader">
-                <a class="bold" ng-click="sortType = 'date'; sortReverse = !sortReverse">Date<span ng-show="sortType == 'date' && !sortReverse" class="fa fa-caret-down bold"></span><span ng-show="sortType == 'date' && sortReverse" class="fa fa-caret-up bold"></span>
+                <a ng-click="sortType = 'date'; sortReverse = !sortReverse">Date<span ng-show="sortType == 'date' && !sortReverse" class="fa fa-caret-down bold"></span><span ng-show="sortType == 'date' && sortReverse" class="fa fa-caret-up bold"></span>
                </td>
+
                <td class="tableHeader">
-                <a ng-click="sortType = 'temperature'; sortReverse = !sortReverse">Temperature<span ng-show="sortType == 'temperature' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'temperature' && sortReverse" class="fa fa-caret-up"></span>
+                <a ng-click="sortType = 'temperature'; sortReverse = !sortReverse">Temp<span ng-show="sortType == 'temperature' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'temperature' && sortReverse" class="fa fa-caret-up"></span>
                </td>
+
+               <td class="tableHeader">
+                <a ng-click="sortType = 'mountain'; sortReverse = !sortReverse">Mountain<span ng-show="sortType == 'mountain' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'mountain' && sortReverse" class="fa fa-caret-up"></span>
+              </td>
+
                <td class="tableHeader">
                 <a ng-click="sortType = 'newSnow'; sortReverse = !sortReverse">New Snow<span ng-show="sortType == 'newSnow' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'newSnow' && sortReverse" class="fa fa-caret-up"></span>
               </td>
+
                <td class="tableHeader">
                 <a ng-click="sortType = 'conditions'; sortReverse = !sortReverse">Conditions<span ng-show="sortType == 'conditions' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'conditions' && sortReverse" class="fa fa-caret-up"></span>
               </td>
-              <td class="tableHeader">
-                <a ng-click="sortType = 'mountain'; sortReverse = !sortReverse">Mountain<span ng-show="sortType == 'mountain' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'mountain' && sortReverse" class="fa fa-caret-up"></span>
-              </td>
-              <td class="tableHeader">
-                <a ng-click="sortType = 'numRuns'; sortReverse = !sortReverse">Number of Runs<span ng-show="sortType == 'numRuns' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'numRuns' && sortReverse" class="fa fa-caret-up"></span>
-              </td>
+
               <td class="tableHeader">
                 <a ng-click="sortType = 'firstChair'; sortReverse = !sortReverse">First Chair<span ng-show="sortType == 'firstChair' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'firstChair' && sortReverse" class="fa fa-caret-up"></span>
               </td>
+
               <td class="tableHeader">
                 <a ng-click="sortType = 'lastChair'; sortReverse = !sortReverse">Last Chair<span ng-show="sortType == 'lastChair' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'lastChair' && sortReverse" class="fa fa-caret-up"></span>
+              </td>
+
+              <td class="tableHeader">
+                <a ng-click="sortType = 'numRuns'; sortReverse = !sortReverse">Total Runs<span ng-show="sortType == 'numRuns' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'numRuns' && sortReverse" class="fa fa-caret-up"></span>
               </td>
               <td class="tableHeader">
                 <a ng-click="sortType = 'skiedWith'; sortReverse = !sortReverse">Skied With<span ng-show="sortType == 'skiedWith' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'skiedWith' && sortReverse" class="fa fa-caret-up"></span>
               </td>
+
               <td class="tableHeader">
                 <a ng-click="sortType = 'rating'; sortReverse = !sortReverse">Rating<span ng-show="sortType == 'rating' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'rating' && sortReverse" class="fa fa-caret-up"></span>
               </td>
+
               <td class="tableHeader">
                 <a ng-click="sortType = 'notes'; sortReverse = !sortReverse">Notes<span ng-show="sortType == 'conditions' && !sortReverse" class="fa fa-caret-down"></span><span ng-show="sortType == 'conditions' && sortReverse" class="fa fa-caret-up"></span>
               </td>
+
               </tr>
             </thead>
             <tbody id="tableBody">
@@ -65,12 +75,12 @@
                   <td>{{ $index + 1 }}</td>
                   <td>{{ day.date }}</td>
                   <td>{{ day.temperature }}</td>
+                  <td>{{ day.mountain }}</td>
                   <td>{{ day.newSnow }}</td>
                   <td>{{ day.conditions }}</td>
-                  <td>{{ day.mountain }}</td>
-                  <td>{{ day.numRuns }}</td>
                   <td>{{ day.firstChair }}</td>
                   <td>{{ day.lastChair }}</td>
+                  <td>{{ day.totalRuns }}</td>
                   <td>{{ day.skiedWith }}</td>
                   <td>{{ day.rating }}</td>
                   <td>{{ day.notes }}</td>
