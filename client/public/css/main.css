@@ -350,6 +350,7 @@ header aside.searchPage {
   padding: 5px;
 }
 
+/* table header controllers - Search Page */
 header.searchPage h1 {
   color: white;
   font-weight: bold;
@@ -357,23 +358,27 @@ header.searchPage h1 {
   font-variant: small-caps;
 }
 
+/* table header controllers - Search Page */
 .titleRow {
   /*font-weight: bold;*/
   font-size: 1.4em;
-
 }
 
+/* table header controllers - Search Page */
 #tableBody {
   font-size: 1.3em;
 }
 
+/* table header controllers - Search Page */
 .tablePage {
   width: 93vw;
 }
 
+/* table header controllers - Search Page */
 thead a:hover {
   color: #83ABAD;
 }
+
 
 /******************************/
 /*          Footer            */

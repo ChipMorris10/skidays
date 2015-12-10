@@ -1,13 +1,13 @@
 <!-- header controlls for logo and page title -->
 <header class='col-lg-12 newTraxPage'>
-<form>
   <img src="../public/img/ski-black-hi.png" />
   <h1>New Trax</h1>
   <aside class="col-lg-3 right">
-    <p>Current Temperature at Copper: 32°</p>
-    <p>Current Temperature at Steamboat: 31°</p>
+    <p>Current Temperature at Copper: 28°</p>
+    <p>Current Temperature at Steamboat: 34°</p>
   </aside>
 </header>
+<form ng-submit="createNewTrax()">
 <div class="clear"></div>
 
 <div class="container">
@@ -20,13 +20,13 @@
   <!-- collect input data -->
     <div class="form-group pull-left col-sm-6">
         <label class="col-sm-6 control-label">Date</label>
-        <div class="col-sm-6 test">
+        <div class="col-sm-6">
           <input type="string" ng-model="newTrax.date" class="form-control" id="skiDate" placeholder="Date (xx/xx/xx)" required>
         </div>
 
         <label class="col-sm-6 control-label">Conditions</label>
         <div class="col-sm-6">
-          <input type="text" ng-model="newTrax.conditions" class="form-control" id="skiConditions" placeholder="(Hard, Icy, Powder, etc.)" required>
+          <input type="text" ng-model="newTrax.conditions" class="form-control" id="skiConditions" placeholder="(Hard, Icy, Crud etc.)" required>
         </div>
       </div>
 
@@ -84,7 +84,7 @@
         <input type="number" ng-model="newTrax.numRuns" class="form-control" id="skiNumRuns" placeholder="Number of Runs" required>
       </div>
       <div class="alignRight">
-        <button class="newTraxBtn btn btn-success" ng-click="createNewTrax()">Submit</button>
+        <input type="submit" value="Submit" class="newTraxBtn btn btn-success">
       </div>
     </div>
 
