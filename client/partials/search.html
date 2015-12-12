@@ -71,7 +71,7 @@
               </tr>
             </thead>
             <tbody id="tableBody">
-              <tr ng-repeat="day in daysArray | orderBy:sortType:sortReverse |filter : query">
+              <tr ng-animate'animate' ng-repeat="day in daysArray | orderBy:sortType:sortReverse |filter : query">
                   <td>{{ $index + 1 }}</td>
                   <td>{{ day.date }}</td>
                   <td>{{ day.temperature }}</td>
@@ -89,7 +89,6 @@
          </table>
        </div>
       </div>
-
 
 
 
