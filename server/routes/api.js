@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Skiday = require('../models/skiday.js');
 
+
 // POST ONE
 router.post('/skidays', function(req, res, next) {
   new Skiday({

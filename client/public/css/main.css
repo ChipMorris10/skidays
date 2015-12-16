@@ -10,7 +10,8 @@ body {
 /* overriding Bootstrap and floating widget right */
 .right {
   float: right;
-  background-color: rgba(127,123,125,0.6)
+  background-color: rgba(127,123,125,0.6);
+  width: 350px;
 }
 
 /* turns off the floats */

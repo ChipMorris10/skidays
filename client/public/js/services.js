@@ -30,6 +30,14 @@ myApp.factory('skiFactory', ['$http', function($http) {
     return $http.put('api/skidays/'+id, payload);
   };
 
+  object.getCopper = function() {
+    return $http.get('copper');
+  };
+
+  object.getSteamboat = function() {
+    return $http.get('steamboat');
+  };
+
   return object;
 
 

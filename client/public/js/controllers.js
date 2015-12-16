@@ -12,12 +12,39 @@ myApp.controller('skiController', ['$scope', 'skiFactory',
     skiFactory.getSkidays().then(function(days){
       $scope.daysArray = days.data;
       console.log($scope.daysArray);
-    })
+    });
+      var findTemp = function(){
+      skiFactory.getCopper().then(function(response){
+      $scope.copper_temp = response.data;
+   }).catch(function(error){
+      console.log(error);
+   });
+    skiFactory.getSteamboat().then(function(response){
+      $scope.steamboat_temp = response.data;
+    });
+ };
+    findTemp();
 }]);
+
+myApp.controller('homeController', ['$scope', '$rootScope', 'skiFactory',
+  function($scope, $rootScope, skiFactory) {
+      var findTemp = function(){
+      skiFactory.getCopper().then(function(response){
+      $scope.copper_temp = response.data;
+   }).catch(function(error){
+      console.log(error);
+   });
+    skiFactory.getSteamboat().then(function(response){
+      $scope.steamboat_temp = response.data;
+    });
+ };
+    findTemp();
+  }]);
 
 myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
   function($scope, skiFactory, $location) {
     console.log('inside of newTraxController');
+    // This is here just to hardcode data for Hiring Day
     // START
     // I put this in for Hiring Day purposes
     // $scope.newTrax={
@@ -39,8 +66,19 @@ myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
         $scope.newTrax = {};
       }).then(function(){
         $location.path("/search");
-      })
-    }
+      });
+    };
+      var findTemp = function(){
+      skiFactory.getCopper().then(function(response){
+      $scope.copper_temp = response.data;
+   }).catch(function(error){
+      console.log(error);
+   });
+    skiFactory.getSteamboat().then(function(response){
+      $scope.steamboat_temp = response.data;
+    });
+ };
+    findTemp();
 }]);
 
 
