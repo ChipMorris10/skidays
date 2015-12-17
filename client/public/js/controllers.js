@@ -3,6 +3,7 @@
 // Variable skiFactory is also in the services.js file
 
 
+// skiController is used for the Search
 myApp.controller('skiController', ['$scope', 'skiFactory',
   function($scope, skiFactory) {
     $scope.daysArray;
@@ -13,6 +14,8 @@ myApp.controller('skiController', ['$scope', 'skiFactory',
       $scope.daysArray = days.data;
       console.log($scope.daysArray);
     });
+
+      // used for the weather API
       var findTemp = function(){
       skiFactory.getCopper().then(function(response){
       $scope.copper_temp = response.data;
@@ -26,6 +29,7 @@ myApp.controller('skiController', ['$scope', 'skiFactory',
     findTemp();
 }]);
 
+// homeController is used for both the Main Page and the weather API
 myApp.controller('homeController', ['$scope', '$rootScope', 'skiFactory',
   function($scope, $rootScope, skiFactory) {
       var findTemp = function(){
@@ -41,6 +45,7 @@ myApp.controller('homeController', ['$scope', '$rootScope', 'skiFactory',
     findTemp();
   }]);
 
+// newTraxController is used for the NewTrax
 myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
   function($scope, skiFactory, $location) {
     console.log('inside of newTraxController');
@@ -68,6 +73,7 @@ myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
         $location.path("/search");
       });
     };
+       // used for the weather API
       var findTemp = function(){
       skiFactory.getCopper().then(function(response){
       $scope.copper_temp = response.data;
