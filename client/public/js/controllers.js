@@ -16,33 +16,34 @@ myApp.controller('skiController', ['$scope', 'skiFactory',
     });
 
       // used for the weather API
-      var findTemp = function(){
-      skiFactory.getCopper().then(function(response){
-      $scope.copper_temp = response.data;
-   }).catch(function(error){
-      console.log(error);
-   });
-    skiFactory.getSteamboat().then(function(response){
-      $scope.steamboat_temp = response.data;
-    });
- };
-    findTemp();
+      // THIS ISN"T NEEDED ANYMORE NOW THAT THERE IS A CUSTOM DIRECTIVE
+ //      var findTemp = function(){
+ //      skiFactory.getCopper().then(function(response){
+ //      $scope.copper_temp = response.data;
+ //   }).catch(function(error){
+ //      console.log(error);
+ //   });
+ //    skiFactory.getSteamboat().then(function(response){
+ //      $scope.steamboat_temp = response.data;
+ //    });
+ // };
+ //    findTemp();
 }]);
 
 // homeController is used for both the Main Page and the weather API
 myApp.controller('homeController', ['$scope', '$rootScope', 'skiFactory',
   function($scope, $rootScope, skiFactory) {
-      var findTemp = function(){
-      skiFactory.getCopper().then(function(response){
-      $scope.copper_temp = response.data;
-   }).catch(function(error){
-      console.log(error);
-   });
-    skiFactory.getSteamboat().then(function(response){
-      $scope.steamboat_temp = response.data;
-    });
- };
-    findTemp();
+ //      var findTemp = function(){
+ //      skiFactory.getCopper().then(function(response){
+ //      $scope.copper_temp = response.data;
+ //   }).catch(function(error){
+ //      console.log(error);
+ //   });
+ //    skiFactory.getSteamboat().then(function(response){
+ //      $scope.steamboat_temp = response.data;
+ //    });
+ // };
+ //    findTemp();
   }]);
 
 // newTraxController is used for the NewTrax
@@ -74,17 +75,17 @@ myApp.controller('newTraxController', ['$scope', 'skiFactory', '$location',
       });
     };
        // used for the weather API
-      var findTemp = function(){
-      skiFactory.getCopper().then(function(response){
-      $scope.copper_temp = response.data;
-   }).catch(function(error){
-      console.log(error);
-   });
-    skiFactory.getSteamboat().then(function(response){
-      $scope.steamboat_temp = response.data;
-    });
- };
-    findTemp();
+ //      var findTemp = function(){
+ //      skiFactory.getCopper().then(function(response){
+ //      $scope.copper_temp = response.data;
+ //   }).catch(function(error){
+ //      console.log(error);
+ //   });
+ //    skiFactory.getSteamboat().then(function(response){
+ //      $scope.steamboat_temp = response.data;
+ //    });
+ // };
+ //    findTemp();
 }]);
 
 
